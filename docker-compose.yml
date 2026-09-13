@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8001:8001"
+    environment:
+      - POD_NAME=local
+      - POD_NAMESPACE=local
+      - SLOW_DELAY_SECONDS=3
